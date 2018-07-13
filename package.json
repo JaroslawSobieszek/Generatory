@@ -5,7 +5,7 @@
   "main": "regon.js",
   "scripts": {
     "start": "node regon.js",
-    "test": "node node_modules/jasmine/bin/jasmine.js spec/RegonSpecs.js"
+    "test": "node node_modules/jasmine/bin/jasmine.js spec/*.js"
   },
   "author": "jaroslaw",
   "license": "ISC",

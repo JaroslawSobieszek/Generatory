@@ -6,9 +6,6 @@ function generateNipDigits(nr) {
     return nipNumber;
 }
 
-
-
-
 /*function getControlDigit(nipLength) {
     var wagi = new Array(6, 5, 7, 2, 3, 4, 5, 6, 7);
     var controlDigit = 0;
@@ -34,8 +31,3 @@ function calculateControlDigit(nipWithoutControlDigit) {
     return cnt % 11;
 }
 module.exports = generateNipDigits;
-
-//console.log(generateNipDigits(123455745));
-//console.log(generateNipDigits(993455745));
-
-//console.log(generateNipDigits(993205748));

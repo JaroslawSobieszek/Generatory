@@ -1,12 +1,10 @@
 function generateDigitRegon(nr) {
     var regonBezSumyKontrolnej = "" + nr;
-    // console.log("regonBezSumyKontrolnej: " + regonBezSumyKontrolnej);
     var sumaKontrolna = getControlDigit(regonBezSumyKontrolnej);
     var regon;
-    // console.log("sumaKontrolna: " + sumaKontrolna);
-    if (sumaKontrolna !=0){
-    regon = regonBezSumyKontrolnej + sumaKontrolna;
-    } else {   
+    if (sumaKontrolna != 0) {
+        regon = regonBezSumyKontrolnej + sumaKontrolna;
+    } else {
         regon = "Wrong regon length";
     }
     return regon;
@@ -23,7 +21,7 @@ function getControlDigit(regonBezSumyKontrolnej) {
         controlDigit = calculateControlDigit(regonBezSumyKontrolnej, wagi8);
     } else if (regonLength == 13) {
         controlDigit = calculateControlDigit(regonBezSumyKontrolnej, wagi13)
-    } 
+    }
     return controlDigit;
 }
 
@@ -38,11 +36,3 @@ function calculateControlDigit(regonBezSumyKontrolnej, wagi) {
     return controlDigit;
 }
 module.exports = generateDigitRegon;
-
-
-//console.log("generateDigitRegon(2738495884524): " + generateDigitRegon(2738495884524));
-
-//console.log("generateDigitRegon(7564736873174): " + generateDigitRegon(7564736873174));
-//console.log("generateDigitRegon(76): " + generateDigitRegon(75)); // Wrong regon length.
-
-
