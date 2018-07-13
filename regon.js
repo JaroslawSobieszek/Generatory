@@ -37,12 +37,12 @@ function calculateControlDigit(regonBezSumyKontrolnej, wagi) {
     }
     return controlDigit;
 }
+module.exports = generateDigitRegon;
 
 
+//console.log("generateDigitRegon(2738495884524): " + generateDigitRegon(2738495884524));
 
-console.log("generateDigitRegon(75647368): " + generateDigitRegon(75647368));
-
-console.log("generateDigitRegon(7564736873174): " + generateDigitRegon(7564736873174));
-console.log("generateDigitRegon(76): " + generateDigitRegon(75)); // Wrong regon length.
+//console.log("generateDigitRegon(7564736873174): " + generateDigitRegon(7564736873174));
+//console.log("generateDigitRegon(76): " + generateDigitRegon(75)); // Wrong regon length.
 
 

@@ -33,8 +33,9 @@ function calculateControlDigit(nipWithoutControlDigit) {
     }
     return cnt % 11;
 }
+module.exports = generateNipDigits;
 
-console.log(generateNipDigits(123455745));
-console.log(generateNipDigits(993455745));
+//console.log(generateNipDigits(123455745));
+//console.log(generateNipDigits(993455745));
 
-console.log(generateNipDigits(993205748));
+//console.log(generateNipDigits(993205748));
