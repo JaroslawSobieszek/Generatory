@@ -5,24 +5,6 @@ function generateNipDigits(nr) {
     var nipNumber = nipWithoutControlDigit + controlDigit;
     return nipNumber;
 }
-
-
-
-
-/*function getControlDigit(nipLength) {
-    var wagi = new Array(6, 5, 7, 2, 3, 4, 5, 6, 7);
-    var controlDigit = 0;
-    var nipLength = nipWithoutControlDigit.length;
-    
-    if (nipLength == 9){
-        controlDigit = calculateControlDigits(nipLength, wagi);
-    } else {
-        controlDigit = "Wrong nip length";
-    } 
-    return controlDigit;
-
-} */
-
 function calculateControlDigit(nipWithoutControlDigit) {
 
     var wagi = [6, 5, 7, 2, 3, 4, 5, 6, 7];
@@ -33,8 +15,4 @@ function calculateControlDigit(nipWithoutControlDigit) {
     }
     return cnt % 11;
 }
-
-console.log(generateNipDigits(123455745));
-console.log(generateNipDigits(993455745));
-
-console.log(generateNipDigits(993205748));
+module.exports = generateNipDigits;

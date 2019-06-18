@@ -1,0 +1,15 @@
+{
+  "name": "regon-prog",
+  "version": "1.0.0",
+  "description": "REGON generator",
+  "main": "regon.js",
+  "scripts": {
+    "start": "node regon.js",
+    "test": "node node_modules/jasmine/bin/jasmine.js spec/*.js"
+  },
+  "author": "jaroslaw",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^3.1.0"
+  }
+}
